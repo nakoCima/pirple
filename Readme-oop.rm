@@ -1,0 +1,92 @@
+# Homework #12: OOP
+
+Definition: 
+Object Oriented Programming (OOP) refers to using self-contained pieces of code to develop applications. 
+These self-contained pieces of code are objects that contains property and methods. Its has its own state data.
+
+Project:
+A project based on a game would benefit greatly because we can think of any new player, weapon, enemies or level as classe with its own props and methods.
+Focusing on a player object:
+First a player creates the player by setting its own personal data such as name or age, by default all players starts with points, lives, weapons, last level played... that are updated.
+If player uses the keyboar, the player moves along the level.
+After each game/level, the data of the player is updated and stored.
+If the game is saved, we need to save its status, if not, the player is deleted.
+If a player is hit by en enemy, its life decrease. If its life goes 0, the player die and the game is over.
+
+
+Main Objects:
+
+* PLAYER *
+----------
+props:
+------
+id
+name
+age
+life
+points
+enemiesKilled
+lastLevelId
+mainWeaponId
+secondaryWeaponId
+methods:
+--------
+update-every-property-method()
+movements()
+useweapon()
+die()
+
+
+
+* WEAPON *
+----------
+props:
+------
+id
+name
+damage
+methods:
+--------
+shoot()
+
+
+
+* ENEMY *
+---------
+props:
+------
+id
+type
+life
+speed
+damage
+accuracy
+methods:
+--------
+update-every-property-method()
+die()
+attackPlayer()
+
+
+
+* LEVEL *
+---------
+props:
+------
+id
+name
+number
+numberOfEnemies
+typeOfEnemiesIds
+difficulty
+methods:
+--------
+startLevel()
+endLevel()
+
+
+
+
+
+
+# Does it have its own state and distinct behavior that is not the responsibility of any component that might use this thing? Will the same instance be used by more than one component in its lifetime?
