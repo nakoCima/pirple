@@ -6,6 +6,8 @@ These self-contained pieces of code are objects that contains property and metho
 
 Project:
 A project based on a game would benefit greatly because we can think of any new player, weapon, enemies or level as classe with its own props and methods.
+The same instance of player, enemy... will be used by more than one component in its lifetime.
+
 Focusing on a player object:
 First a player creates the player by setting its own personal data such as name or age, by default all players starts with points, lives, weapons, last level played... that are updated.
 If player uses the keyboar, the player moves along the level.
@@ -83,10 +85,3 @@ methods:
 --------
 startLevel()
 endLevel()
-
-
-
-
-
-
-# Does it have its own state and distinct behavior that is not the responsibility of any component that might use this thing? Will the same instance be used by more than one component in its lifetime?
